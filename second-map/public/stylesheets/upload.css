@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#map {
+  width: 100vw;
+  height: calc(100vh - 50px);
+}
+
+#navbar {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: 50px;
+  /* background-color: #262626; */
+  /* color: #fff; */
+  /* font-weight: 600; */
+  /* font-size: 25px; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background: #333;
+}
+
+li {
+  float: left;
+  height: 100%;
+}
+
+li.navbar-upload {
+  float: right;
+}
+
+li a {
+  display: block;
+  height: 100%;
+  padding: 14px 16px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.active {
+  background-color: green;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.info .body {
+  position: relative;
+  overflow: hidden;
+}
+
+.info .desc {
+  position: relative;
+  margin: 8px 0 0 90px;
+  height: 75px;
+  display: block;
+}
+
+.map_wrap,
+.map_wrap * {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 225px;
+  margin: 50px 0 30px 10px;
+  padding: 5px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.menu-wrap hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #5f5f5f;
+  margin: 3px 0;
+}
+
+.menu-wrap .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5px;
+}
+
+.menu-wrap .form button {
+  min-width: fit-content;
+}
+
+.menu-wrap .form .form-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 5px;
+}
+
+.menu-wrap .form .form-input .label {
+  min-width: fit-content;
+}
+
+.menu-wrap .form #keyword {
+  width: 100%;
+}
+
+#placeList .item {
+  position: relative;
+  border-bottom: 1px solid #888;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+#placeList .item span {
+  display: block;
+  margin-top: 4px;
+}
+
+#placeList .item .info {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+#placeList .item .info-title {
+  font-weight: 600;
+}
+
+.kakao-info-window {
+  padding: 25px;
+}

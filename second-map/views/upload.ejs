@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecondMap ::: Upload</title>
+
+    <link rel="stylesheet" href="/stylesheets/upload.css" />
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8d03a6f9e8b5d1f0c76c329a3a5d1d40&libraries=services"></script>
+    <script src="/javascripts/upload.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <ul id="navbar">
+      <li>
+        <a href="/">SecondMap</a>
+      </li>
+
+      <li class="navbar-upload">
+        <a class="active" href="/upload">Upload</a>
+      </li>
+    </ul>
+    <!-- Navbar -->
+
+    <!-- 지도 -->
+    <div id="map"></div>
+    <!-- 지도 -->
+
+    <!-- 검색창 -->
+    <div class="menu-wrap">
+      <form class="form" onsubmit="searchPlaces(); return false;">
+        <div class="form-input">
+          <label class="label" for="keyword">키워드: </label>
+          <input id="keyword" type="text" value="강남역" />
+        </div>
+
+        <button type="submit">검색</button>
+      </form>
+      <hr />
+
+      <div id="placeList"></div>
+    </div>
+    <!-- 검색창 -->
+  </body>
+</html>
